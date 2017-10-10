@@ -1,0 +1,17 @@
+html
+	head
+		title Bulletin Board Application
+		link(rel='stylesheet', href='/style.css')
+
+	body
+				
+		h1 New Blog
+			#blog
+				-var len = blogs.length;
+				-for(var i = 0; i < len; i++) 
+					h2
+						.blogs title #{blogs[i].title}
+					p
+						.blogs body #{blogs[i].body}
+			a(href='/new')
+				button Post New Blog

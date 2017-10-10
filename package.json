@@ -1,0 +1,19 @@
+{
+  "name": "newbull",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "pg": "^7.3.0",
+    "pug": "^2.0.0-rc.4",
+    "sequelize": "^4.13.5",
+    "sequelize-cli": "^3.0.0",
+    "sharp": "^0.18.4"
+  }
+}

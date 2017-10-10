@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title Bulletin Board Application
+    link(rel='stylesheet', href='/style.css')
+
+  body
+    h1 New Blog
+     form(class="data-entry",method="POST", action="/new")
+      //- .controls
+      p Title
+         input(type="text", name="title")
+      p Blog
+        textarea(rows='20',cols='40', name="body")
+      //- input(type="text", name="body")
+
+      p
+         input(type="submit")
+     
+
+
+      
