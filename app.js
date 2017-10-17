@@ -47,10 +47,9 @@ app.post('/new', function(req, res){
 	});
 })
 
-app.listen(3002, function(){
-  console.log('App is listening on port 3002');
-});
-
+app.listen(process.env.PORT || 3000, function() {
+	console.log("Your server is available at localhost:3000!");
+	});
 
 
 
