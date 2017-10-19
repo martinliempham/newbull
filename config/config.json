@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "martinpham",
+    "username": "root",
     "password": null,
-    "database": "newBull",
+    "database": "database_development",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "test": {
-    "username": "martinpham",
+    "username": "root",
     "password": null,
-    "database": "newBull",
+    "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   },
   "production": {
-    "username": "martinpham",
+    "username": "root",
     "password": null,
-    "database": "newBull",
+    "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   }
 }
