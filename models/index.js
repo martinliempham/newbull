@@ -33,14 +33,14 @@ var Sequelize = require('sequelize');
 // db.sequelize = sequelize;
 // db.Sequelize = Sequelize;
 
-var sequelize = new Sequelize({
-    username: 'martinpham',
-    password: 'NYCDA',
-    dialect: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    database: 'newbull'
-});
+// var sequelize = new Sequelize({
+//     username: 'martinpham',
+//     password: 'NYCDA',
+//     dialect: 'postgres',
+//     host: 'localhost',
+//     port: 5432,
+//     database: 'newbull'
+// });
 
 if (process.env.DATABASE_URL) {
   var sequelize = new Sequelize(process.env.DATABASE_URL);
