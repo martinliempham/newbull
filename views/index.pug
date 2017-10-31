@@ -6,12 +6,13 @@ html
 	body
 				
 		h1 New Message
-			#blog
-				-var len = messages.length;
+			#messages
+				-var len = Messages.length
+				//- console.log(messages)
 				-for(var i = 0; i < len; i++) 
 					h2
-						.messages  #{messages[i].title}
+						.messages  #{Messages[i].title}
 					p
-						.messages  #{messages[i].body}
+						.messages  #{Messages[i].body}
 			a(href='/new')
 				button Post New Message
