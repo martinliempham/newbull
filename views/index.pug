@@ -6,15 +6,16 @@ html
 	body
 				
 		h1 New Message
-			#messages
-				-var len = Messages.length
-				//- console.log(messages)
-				-for(var i = 0; i < len; i++) 
-					h2
-						.messages  #{Messages[i].title}
-					p
-						.messages  #{Messages[i].body}
+			div
 			a(href='/new')
 				button Post New Message
 			a(href='/')
 				button Go Home
+			#messages
+				-var len = Messages.length
+				//- console.log(messages)
+				-for(var i = 0; i < len; i++) 
+					p
+						.messages  #{Messages[i].title}
+					p
+						.messages  #{Messages[i].body}

@@ -1,8 +1,16 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background-color: #00B7FF;
+  	padding: 50px;
+ 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-align: center;
+	border-style: solid, black;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+	font: 30px "Helvetica", white;
+	font-weight: bold;
 }
