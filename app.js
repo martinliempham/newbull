@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-var Blogs = require('./models/index');
+var Messages = require('./models/index');
 
 
 // var Sequelize = require('sequelize');
@@ -22,9 +22,9 @@ app.use(bodyParser.json());
 
 //gets user input from index.pug
 app.get('/', function(req, res){
-	Blogs.findAll().then(function(rows){
+	Messages.findAll().then(function(rows){
 		console.log(rows)
-		res.render('index',{blogs:rows});
+		res.render('index',{Messages:rows});
 	})
 })
 
@@ -36,10 +36,10 @@ app.get('/new', function(req, res){
 
 
 app.post('/new', function(req, res){
-	Blogs
+	Messages
 		.sync()
 		.then(function(){
-			Blogs.create({
+			Messages.create({
 				title: req.body.title,
 				body: req.body.body
 			});

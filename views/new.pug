@@ -5,12 +5,12 @@ html
     link(rel='stylesheet', href='/style.css')
 
   body
-    h1 New Blog
+    h1 New Message
      form(class="data-entry",method="POST", action="/new")
       //- .controls
       p Title
          input(type="text", name="title")
-      p Blog
+      p Message
         textarea(rows='20',cols='40', name="body")
       //- input(type="text", name="body")
 

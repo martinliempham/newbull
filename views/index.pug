@@ -5,13 +5,13 @@ html
 
 	body
 				
-		h1 New Blog
+		h1 New Message
 			#blog
-				-var len = blogs.length;
+				-var len = messages.length;
 				-for(var i = 0; i < len; i++) 
 					h2
-						.blogs  #{blogs[i].title}
+						.messages  #{messages[i].title}
 					p
-						.blogs  #{blogs[i].body}
+						.messages  #{messages[i].body}
 			a(href='/new')
-				button Post New Blog
+				button Post New Message

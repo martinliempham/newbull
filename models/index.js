@@ -55,7 +55,7 @@ if (process.env.DATABASE_URL) {
   });
 }
 
-var Blogs = sequelize.define('blogs',{
+var Messages = sequelize.define('messages',{
     
     title: { 
         type: Sequelize.STRING,
@@ -68,7 +68,7 @@ var Blogs = sequelize.define('blogs',{
     created: Sequelize.DATE
 });
 
-Blogs.sync()
+Messages.sync()
 
 
-module.exports = Blogs;
+module.exports = Messages;
