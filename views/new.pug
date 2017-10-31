@@ -9,9 +9,9 @@ html
      form(class="data-entry",method="POST", action="/new")
       //- .controls
       p Title
-         input(type="text", name="title")
+         input(type="text", name="title", required=true)
       p Message
-        textarea(rows='20',cols='40', name="body")
+        textarea(rows='20',cols='40', name="body", required=true)
       //- input(type="text", name="body")
 
       p
